@@ -6,7 +6,6 @@ import { Button } from '@dennisko/cray';
 function App() {
   return (
     <div>
-      <h1>Hello CodeSandbox</h1>
       <Button bla={'bla'} />
     </div>
   );
