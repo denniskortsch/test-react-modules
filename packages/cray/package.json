@@ -19,7 +19,7 @@
     "rimraf": "^2.6.2"
   },
   "scripts": {
-    "build": "yarn build:clean && yarn build:lib && yarn build:flow",
+    "build": "yarn && yarn build:clean && yarn build:lib && yarn build:flow",
     "build:clean": "rimraf lib",
     "build:lib": "NODE_ENV=production babel -d lib src --ignore '**/__tests__/**'",
     "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib"
